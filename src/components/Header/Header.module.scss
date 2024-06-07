@@ -1,0 +1,46 @@
+@import 'assets/styles/reset.scss';
+@import 'assets/styles/media.scss';
+@import 'assets/styles/font.scss';
+@import 'assets/styles/color.scss';
+
+.headerWrapper {
+	position: relative;
+	margin-bottom: 1000px; // TODO: test
+
+	.graphicWrapper {
+		overflow-x: hidden;
+		display: flex;
+		justify-content: center;
+		border-radius: 0 0 34px 34px;
+
+		.graphic {
+			max-width: 150vw;
+			margin-top: -25vh;
+
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			pointer-events: none;
+		}
+	}
+
+	.taglineWrapper {
+		position: absolute;
+		top: 30%;
+		left: 32px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+		width: 260px;
+
+		.taglineWord {
+			@extend .text-lg;
+			background-color: $color-white;
+			border-radius: 13px;
+			padding: 0 12px;
+			box-shadow: 5px 5px 0 0 $color-black;
+		}
+	}
+}

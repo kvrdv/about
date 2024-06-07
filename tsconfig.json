@@ -24,6 +24,7 @@
 	"include": [
 		"src/**/*.ts",
 		"src/**/*.tsx",
-		"src/types.d.ts"
+		"src/declarations.d.ts",
+		"src/utils/constants.ts",
 	],
 }

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
+body {
+	font-family: 'Unbounded', sans-serif;
+}
+
+// $font-weight-thn: 300;
+$font-weight-reg: 400;
+$font-weight-med: 500;
+// $font-weight-bld: 700;
+
+$font-size-sm: 16px;
+$font-size-md: 18px;
+$font-size-lg: 36px;
+
+// $line-height-sm: 32px;
+$line-height-md: auto;
+$line-height-lg: 52px;
+
+@mixin text-style($weight, $size, $height) {
+	font-weight: $weight;
+	font-size: $size;
+	line-height: $height;
+}
+
+.text-sm {
+	@include text-style($font-weight-reg, $font-size-sm, $line-height-md);
+}
+
+// .text-md {
+// 	@include text-style($font-weight-med, $font-size-md, $line-height-md);
+// }
+
+.text-lg {
+	@include text-style($font-weight-reg, $font-size-lg, $line-height-lg);
+}
+
+.text-bold {
+	@include text-style($font-weight-med, $font-size-md, $line-height-md);
+}
